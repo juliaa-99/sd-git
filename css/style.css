@@ -14,7 +14,7 @@
 body {
   min-width: 320px;
   height: 100%;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif !important; }
 
 a, div, span, svg use, ul li {
   transition: 0.3s; }
@@ -52,6 +52,9 @@ h2 {
     h2 {
       font-size: 28px;
       line-height: 38px; } }
+
+button {
+  font-family: "Montserrat", sans-serif !important; }
 
 .button {
   background: transparent;
@@ -241,9 +244,13 @@ h2 {
       .setting__cell_tw {
         order: 2; } }
   .setting__cell_th {
-    width: 223px; }
+    width: 15%; }
+    .setting__cell_th .button {
+      width: 100%;
+      box-sizing: border-box; }
     @media screen and (max-width: 1320px) {
       .setting__cell_th {
+        width: 223px;
         margin-top: 15px; } }
     @media screen and (max-width: 768px) {
       .setting__cell_th {
